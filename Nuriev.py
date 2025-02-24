@@ -16,6 +16,7 @@ def process_images_from_folder(folder_path):
         print("Нет изображений в указанной папке.")
         return
 
+    print("Изображения найдены!")
     for image_file in image_files:
         # Полный путь к файлу изображения
         image_path = os.path.join(folder_path, image_file)

@@ -31,7 +31,7 @@ public class BonusController : MonoBehaviour
 
         if (hit != null && hit.transform == transform)
         {
-            isSelected = true;
+            isSelected = false;
 
             if (Input.GetKeyDown(KeyCode.Backspace) && !isPositionLocked)
             {

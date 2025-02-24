@@ -24,6 +24,7 @@ namespace EA.Core.Client
         public void RemoveWeapon(int index);
 
         public bool IsPaused();
+        public bool isTutored();
 
         public void SetLevelSettings(int killedBotsForWin, int coinRewardForWin, IMenu menuLogicManager, AudioClip winSound, AudioClip lossSound);
 

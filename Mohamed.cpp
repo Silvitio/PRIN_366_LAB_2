@@ -30,7 +30,7 @@ void FractionalArithmeticCalculator::run(const string& inputFilePath, const stri
     }
 }
 
-sjadhfsjdfshdjfhsajdhfjasj
+
     cout << "DEBUG: Reading input file: " << inputFilePath << endl;
     ifstream inputFile(inputFilePath);
     if (!inputFile) {
@@ -47,7 +47,7 @@ void FractionalArithmeticCalculator::writeOutputFile(const string& outputFilePat
     if (!outputFile) {
         throw runtime_error("Invalid output file path");
     }
-    changed 1   
+    outputFile << result;
     outputFile.close();
     cout << "DEBUG: Result written: " << result << endl;
 }
@@ -88,7 +88,7 @@ bool FractionalArithmeticCalculator::isOperationValid(const string& operation) c
     cout << "DEBUG: Checking if operation is valid: " << operation << endl;
     return operation == "+" || operation == "-" || operation == "*" || operation == "/";
 }
-
+dfgdfgdsfgfdgsdfgsdrgsregsergshergergesr
 bool FractionalArithmeticCalculator::areInputsEmpty() const {
     cout << "DEBUG: Checking if inputs are empty..." << endl;
     return firstNumber.empty() || secondNumber.empty() || operation.empty();
@@ -108,7 +108,7 @@ string FractionalArithmeticCalculator::performOperation() {
     else {
         num1.insert(num1.end(), fracLen2 - fracLen1, 0);
     }
-    //changed line 111
+
     vector<int> result;
     int fractionalLength = 0;
     bool isNegative = false; // Track if result should be negative

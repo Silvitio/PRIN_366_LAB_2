@@ -23,7 +23,7 @@ export default {
   data() {
     return {
       nodeSize: 5,
-      nodeBorderSize: 2
+      nodeBorderSize: 3
     }
   },
 

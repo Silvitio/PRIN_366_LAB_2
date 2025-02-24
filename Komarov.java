@@ -42,7 +42,7 @@ public class Robot
         }
 
         // ����� ��������� ������ ���������� ����� � ������� ��� ���� ��� ����
-        if (outBattery == null || (outBattery.position() != null && !outBattery.position().equals(_position))) {
+        if (outBattery == null || (outBattery.position() != null || !outBattery.position().equals(_position))) {
             throw new IllegalStateException("��������� ������ ���������� �� ������� ������ ��� ���� ��� ����.");
         }
 

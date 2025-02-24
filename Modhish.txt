@@ -1,0 +1,42 @@
+def search_and_replace(file_path, search_text, replace_text):
+    """
+    Searches for `search_text` in the file and replaces it with `replace_text`.
+    
+    Args:
+        file_path (str): Path to the file.
+        search_text (str): Text to search for.
+        replace_text (str): Text to replace with.
+    """
+    try:
+        # Read the file
+        with open(file_path, 'r') as file:
+            file_content = file.read()
+        
+        # Perform the search and replace
+        updated_content = file_content.replace(search_text, replace_text)
+        
+        # Write the updated content back to the file
+        with open(file_path, 'w') as file:
+            file.write(updated_content)
+        
+        print(f"Replaced '{search_text}' with '{replace_text}' in '{file_path}'.")
+    
+    except FileNotFoundError:
+        print(f"Error: The file '{file_path}' was not found.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+# Example usage
+if __name__ == "__main__":
+    # File path
+    file_path = "example.txt"
+    
+    # Create a sample file (for demonstration purposes)
+    with open(file_path, 'w') as file:
+        file.write("Hello, world! This is a test file.\n")
+        file.write("Notepad++ is a great text editor.\n")
+    
+    # Perform search and replace
+    search_text = "Notepad++"
+    replace_text = "VS Code"
+    search_and_replace(file_path, search_text, replace_text)

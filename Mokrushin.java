@@ -184,7 +184,7 @@ public final class ReducedFraction {
 
     /**
      * Представить дробь как строку.
-     *
+     *@param b dshbjchdsbkjckdsjbcjdsbcjkdscbkjd
      * @return строковое представление дроби
      */
     @Override

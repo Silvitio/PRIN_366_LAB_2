@@ -55,7 +55,7 @@
 
             <div class="header-content text-center text-white">
                 <h1 class="display-5">Бакалаврская программа</h1>
-                <h2 class="fw-bold">Прикладная математика и информатика</h2>
+                <h2 class="fw-bold">Информационные технологии</h2>
                 <p class="lead">
                     Целью программы является подготовка специалистов по работе с данными (data scientist), аналитиков (analyst), 
                     исследователей в области компьютерных наук (researcher and computer scientist), инженеров-разработчиков и 

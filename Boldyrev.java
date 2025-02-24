@@ -10,44 +10,44 @@ import brokenrobotgame.model.tools.Random_mSievertDosimeter;
 import java.awt.*;
 
 /*
- * RadiationMeasuringAndCellColoringRobot - модель робота, который помимо того, что обладает теми же умениями, что и AbstractRobot,
- * умеет закрашивать клетки игрового поля и измерять уровень радиации в них.
+ * RadiationMeasuringAndCellColoringRobot - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅ AbstractRobot,
+ * пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ.
  */
 public class RadiationMeasuringAndCellColoringRobot extends AbstractRobot implements RadiationMeasuring, CellColoring
 {
-    // ------------------- Порождение робота -----------------
+    // ------------------- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ -----------------
 
     public RadiationMeasuringAndCellColoringRobot(GameField field) { super(field); }
 
-    // ------------------- Инструменты робота -----------------
+    // ------------------- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ -----------------
 
     private Random_mSievertDosimeter dosimeter = new Random_mSievertDosimeter(super.field());
     private ChameleonBrush brush = new ChameleonBrush(super.field());
 
-    // ------------------- Стоимость (в зарядах) для закрашивания клетки -----------------
+    // ------------------- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ) пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ -----------------
 
-    private final int cellColoringPrice = 2;
+    private final int cellColoringPrice = 4;
 
     public int getCellColoringPrice() { return cellColoringPrice; }
 
-    // ------------------- Измерение радиации роботом -----------------
+    // ------------------- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ -----------------
 
     @Override
     public int measureRadiation(CellPosition position)
     {
-        // Возвращаем случайное значение радиации, полученное от дозиметра
-        return dosimeter.measureRadiation(position); // радиация от 0 до 2000 мЗв
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        return dosimeter.measureRadiation(position); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ 0 пїЅпїЅ 2000 пїЅпїЅпїЅ
     }
 
-    // ------------------- Закраска клетки роботом -----------------
+    // ------------------- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ -----------------
 
     @Override
     public void colorCell(CellPosition position, Color color)
     {
-        if(amountОfСharge() >= cellColoringPrice)
+        if(amountпїЅfпїЅharge() >= cellColoringPrice)
         {
-            brush.colorCell(position, color);  // Закрашиваем кистью заданную позицию на поле в необходимый цвет
-            // Используем заряд
+            brush.colorCell(position, color);  // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+            // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
             reduceCharge(cellColoringPrice);
         }
     }

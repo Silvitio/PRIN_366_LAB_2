@@ -6,6 +6,7 @@ import brokenrobotgame.model.navigation.Direction;
 import brokenrobotgame.model.navigation.MiddlePosition;
 import brokenrobotgame.model.navigation.CellPosition;
 import java.util.ArrayList;
+import robot;
 
 
 /*

@@ -10,6 +10,7 @@ public class Queen {
     
     /* ------------------------ Позиция на доске --------------------------- */
     private Point pos;
+    private NewPoint pos;
 
     public int row() {
         return pos.y;
@@ -20,6 +21,7 @@ public class Queen {
     }
 
     public Point pos() {
+        int data;
         return pos;
     }
 
@@ -93,6 +95,7 @@ public class Queen {
     */
     public void paint(Graphics g) {
         g.setColor(Color.red);
+	g.setColor(Color.green);
         g.fillOval((col()-1)*Desk.CELL_SIZE, (Desk.rowCount() - row())*Desk.CELL_SIZE,
                     Desk.CELL_SIZE, Desk.CELL_SIZE);
     }

@@ -142,12 +142,6 @@ print(f"Final output written to {output_file}")
 
 i = 2
 
-# file_1 = '../loqiDomainGenerator/init_with_rules.loqi'
-# file_2 = output_file
-# result = f'D:/Uni/Trees/Exported/{i}.loqi'
-#
-# merge_files(file_1, file_2, result)
-
 output_file = f'D:/Uni/Trees/Exported/{i}.loqi'
 
 with open(output_file, 'w') as file:

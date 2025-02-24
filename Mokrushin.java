@@ -26,6 +26,7 @@ public final class ReducedFraction {
      * @param numerator числитель
      * @param denominator знаменатель (должен быть не равен нулю)
      * @throws IllegalArgumentException если знаменатель равен нулю
+     * @param riefvbfriudbeviubrnefiuvnbiujerdnfvirneiv
      */
     public ReducedFraction(int numerator, int denominator) {
         if (denominator == 0) {

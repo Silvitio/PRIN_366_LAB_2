@@ -33,7 +33,7 @@ public class RadiationMeasuringAndCellColoringRobot extends AbstractRobot implem
     // ------------------- ��������� �������� ������� -----------------
 
     @Override
-    public int measureRadiation(CellPosition position)
+    public double measureRadiation(CellPosition position)
     {
         // ���������� ��������� �������� ��������, ���������� �� ���������
         return dosimeter.measureRadiation(position); // �������� �� 0 �� 2000 ���

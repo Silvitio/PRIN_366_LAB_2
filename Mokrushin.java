@@ -35,6 +35,7 @@ public final class ReducedFraction {
 
         int gcd = gcd(numerator, denominator);
 
+@param other друscsacsacsacsacsacsacsacsacsac
         // Установка правильного знака и сокращение дроби
         this.numerator = (denominator < 0) ? -numerator / gcd : numerator / gcd;
         this.denominator = Math.abs(denominator) / gcd;
@@ -183,7 +184,7 @@ public final class ReducedFraction {
 
     /**
      * Представить дробь как строку.
-     *
+     *@param b dshbjchdsbkjckdsjbcjdsbcjkdscbkjd
      * @return строковое представление дроби
      */
     @Override

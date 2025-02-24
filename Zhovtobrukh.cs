@@ -109,7 +109,7 @@ public class BonusController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("DirtyPipe") || other.CompareTag("LeakPipe"))
+        if (other.CompareTag("DirtyPipes") || other.CompareTag("LeakPipe"))
         {
             targetPipe = other.gameObject;
         }

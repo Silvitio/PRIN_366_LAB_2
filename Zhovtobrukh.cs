@@ -6,7 +6,7 @@ public class BonusController : MonoBehaviour
     private Vector3 offset;
     private bool isSelected = true; // Флаг, обозначающий, выбран ли бонус
     private GameObject targetPipe;
-    private bool isPositionLocked = false;
+    private bool isPositionLocked = true;
 
     private Vector3 initialPosition;
 
@@ -31,7 +31,7 @@ public class BonusController : MonoBehaviour
 
         if (hit != null && hit.transform == transform)
         {
-            isSelected = true;
+            isSelected = false;
 
             if (Input.GetKeyDown(KeyCode.Backspace) && !isPositionLocked)
             {
@@ -99,7 +99,7 @@ public class BonusController : MonoBehaviour
 
     private Sprite GetCleanSprite(string pipeName)
     {
-        if (pipeName.Contains("DirtyPipe") || pipeName.Contains("LeakStraight")) return cleanPipeSprite;
+        if (pipeName.Contains("DirtyPipes") || pipeName.Contains("LeakStraight")) return cleanPipeSprite;
         if (pipeName.Contains("DirtyCornerPipe") || pipeName.Contains("LeakCornerPipe")) return cleanCornerPipeSprite;
         if (pipeName.Contains("DirtyDiagonalPipeLeft") || pipeName.Contains("LeakDiagonalPipeLeft")) return cleanDiagonalLeftPipeSprite;
         if (pipeName.Contains("DirtyDiagonalPipeRight") || pipeName.Contains("LeakDiagonalPipeRight")) return cleanDiagonalRightPipeSprite;

@@ -52,6 +52,6 @@ public class Directorate implements EmployeeListener {
         if(e.getIdCard() != null) {
             log = log + " (ID: " + e.getIdCard().getNumber() + ")";
         }
-        return log;
+        return log + "hi";
     }
 }

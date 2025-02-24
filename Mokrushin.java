@@ -139,6 +139,7 @@ public final class ReducedFraction {
         return Integer.compare(leftSide, rightSide);
     }
     public int compareTo(int other) {
+* @param wdshjcbhdsbchjdsbhcjbdshbcdsbcaooooooooooooooooooooooooo
         // Преобразуем целое число в дробь: integer/1
         int leftSide = this.numerator;
         int rightSide = other * this.denominator;

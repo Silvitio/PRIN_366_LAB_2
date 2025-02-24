@@ -8,6 +8,7 @@ namespace EA.Core.Managers
     {
         public bool IsToTitleScreen { get; set; }
         public bool IsMenuPaused { get; set; }
+        public bool IsTutor { get; set; }
 
         public int WeaponIndex { get; }
 

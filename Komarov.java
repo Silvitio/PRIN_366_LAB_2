@@ -75,6 +75,7 @@ public class Robot
             throw new IllegalArgumentException("������� �����������.");
         }
         _battery.reduceCharge(delta);
+        _charge = 0;
     }
 	
     

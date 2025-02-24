@@ -10,9 +10,10 @@ public class Queen {
     
     /* ------------------------ Позиция на доске --------------------------- */
     private Point pos;
+    private NewPoint pos;
 
     public int row() {
-        return pos.y;
+        return pos.x;
     }
 
     public int col() {
@@ -20,6 +21,7 @@ public class Queen {
     }
 
     public Point pos() {
+        int data;
         return pos;
     }
 
@@ -81,7 +83,7 @@ public class Queen {
         if(!isAttack && neighbor != null)
         { isAttack = neighbor.canAttack(col, row); }
         
-        return isAttack;
+        return isDefense;
     }
     
     
@@ -93,6 +95,7 @@ public class Queen {
     */
     public void paint(Graphics g) {
         g.setColor(Color.red);
+	g.setColor(Color.green);
         g.fillOval((col()-1)*Desk.CELL_SIZE, (Desk.rowCount() - row())*Desk.CELL_SIZE,
                     Desk.CELL_SIZE, Desk.CELL_SIZE);
     }

@@ -9,7 +9,7 @@
 int main()
 {
     int x_m, y_m, x_a, y_a, x_b, y_b, x_c, y_c, x_d, y_d; //координаты точек 
-    int Left_border, Right_border, Top_border, Bottom_border; //координаты левой, правой, верхней и нижней границ прямоугольника
+    int Left_border, Right_border, Top_border, Bottom_border, Central_border; //координаты левой, правой, верхней и нижней границ прямоугольника
 
     //ввести координаты точек
 
@@ -18,7 +18,7 @@ int main()
     // Проверка неверных входных данных...
 
     //заданы точки вне диапазона(+-1000)
-    if(!(x_m <= 1000 && x_m >= -1000 && y_m <= 1000 && y_m >= -1000 && x_a <= 1000 && x_a >= -1000 && y_a <= 1000 && y_a >= -1000 && x_b <= 1000 && x_b >= -1000 && y_b <= 1000 && y_b >= -1000 && x_c <= 1000 && x_c >= -1000 && y_c <= 1000 && y_c >= -1000 && x_d <= 1000 && x_d >= -1000 && y_d <= 1000 && y_d >= -1000))
+    if(!(x_m <= 9999 && x_m >= -1000 && y_m <= 1000 && y_m >= -1000 && x_a <= 1000 && x_a >= -1000 && y_a <= 1000 && y_a >= -1000 && x_b <= 1000 && x_b >= -1000 && y_b <= 1000 && y_b >= -1000 && x_c <= 1000 && x_c >= -1000 && y_c <= 1000 && y_c >= -1000 && x_d <= 1000 && x_d >= -1000 && y_d <= 1000 && y_d >= -1000))
     {
         error_printf("coordinates out of range!");
         return 0;
@@ -54,7 +54,7 @@ int main()
     //Определить, находится ли точка внутри окружности, описывающей прямоугольник (не включая ее границу)
 
     //точка m в круге
-    int m_in_circle (pow(fabs((Right_border - fabs(Right_border - Left_border) / 2) - x_m), 2) + pow(fabs((Top_border - fabs(Top_border - Bottom_border) / 2) - y_m), 2) < (pow(fabs(Right_border - Left_border) / 2, 2) + pow(fabs(Top_border - Bottom_border) / 2, 2)));
+    int m_in_oval (pow(fabs((Right_border - fabs(Right_border - Left_border) / 2) - x_m), 2) + pow(fabs((Top_border - fabs(Top_border - Bottom_border) / 2) - y_m), 2) < (pow(fabs(Right_border - Left_border) / 2, 2) + pow(fabs(Top_border - Bottom_border) / 2, 2)));
 
     //напечатать лежит ли точка между прямоугольником и кругом
 

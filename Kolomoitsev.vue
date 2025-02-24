@@ -3,7 +3,7 @@
 import BlockNode from "./BlockNode.vue";
 
 /* ---------- CONSTANTS ---------- */
-const inputColor = "bg-blue-500"
+const inputColor = "bg-blue-400"
 const outputColor = "bg-green-500"
 
 /* ---------- VUE OBJECTS ---------- */
@@ -12,7 +12,7 @@ export default {
   props: {
     text: {
       type: String,
-      required: true,
+      required: false,
     },
     type: {
       type: String,
@@ -23,7 +23,7 @@ export default {
   data() {
     return {
       nodeSize: 5,
-      nodeBorderSize: 2
+      nodeBorderSize: 3
     }
   },
 
@@ -48,7 +48,7 @@ export default {
   <div :class="{ 'flex-row-reverse': isReversed }" class="flex items-center justify-center gap-2">
     <!-- Узел -->
     <BlockNode :main-color="getColor" :size="nodeSize" :border-size="nodeBorderSize"/>
-    <!-- Текст -->
+    <!-- Текст узла -->
     <span class="text-lg font-semibold">{{ this.text }}</span>
   </div>
 </template>

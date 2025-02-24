@@ -11,9 +11,6 @@ dependency_map = {
     "iobj": ("iobj", "none"),
     "nummod": ("nummod", "none"),
     "ccomp": ("ccomp", "none"),
-    "xcomp": ("xcomp", "none"),
-    "acl": ("acl", "none"),
-    "advmod": ("advmod", "none"),
     "advmod:mnr": ("advmod", "manner"),
     "advmod:dgr": ("advmod", "degree"),
     "advmod:plc": ("advmod", "place"),
@@ -99,7 +96,6 @@ def merge_files(file1_path, file2_path, output_file_path):
     - output_file_path: Path to the output file where the merged content will be written.
     """
     try:
-        # Open the first file in read mode and the second file in read mode
         with open(file1_path, 'r') as file1, open(file2_path, 'r') as file2:
             # Read content from both files
             file1_content = file1.read()
@@ -120,7 +116,7 @@ def merge_files(file1_path, file2_path, output_file_path):
         print(f"An error occurred: {e}")
 
 
-output_file = "example.loqi"
+output_file = "examples.loqi"
 
 # Define variables for replacement at the bottom
 input_text = """1\the\t3\tnsubj
@@ -141,12 +137,6 @@ with open(output_file, 'w') as file:
 print(f"Final output written to {output_file}")
 
 i = 2
-
-# file_1 = '../loqiDomainGenerator/init_with_rules.loqi'
-# file_2 = output_file
-# result = f'D:/Uni/Trees/Exported/{i}.loqi'
-#
-# merge_files(file_1, file_2, result)
 
 output_file = f'D:/Uni/Trees/Exported/{i}.loqi'
 

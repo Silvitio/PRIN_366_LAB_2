@@ -28,11 +28,6 @@ public class Directorate implements EmployeeListener {
     }
 
     @Override
-    public void employeeEnrolled(EmployeeEvent e) {
-        _history.add("Employee " + employeeToString(e.getSource()) + " was enrolled in department \"" + e.getCurrentDepartment().getName() + "\"");
-    }
-
-    @Override
     public void employeeTransferred(EmployeeEvent e) {
         _history.add("Employee " + employeeToString(e.getSource()) + " was transferred from department \"" + e.getPrevDepartment().getName() + "\"  to department \"" + e.getCurrentDepartment().getName() + "\"");
     }
@@ -52,6 +47,6 @@ public class Directorate implements EmployeeListener {
         if(e.getIdCard() != null) {
             log = log + " (ID: " + e.getIdCard().getNumber() + ")";
         }
-        return log;
+        return log + "hi";
     }
 }

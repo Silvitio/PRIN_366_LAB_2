@@ -3,15 +3,18 @@ using EA.Weapons;
 using System.Collections.Generic;
 using UnityEngine;
 namespace EA.Core.Managers
+namespace EA.Core.Client
 {
     public interface ILevelManager
     {
         public bool IsToTitleScreen { get; set; }
         public bool IsMenuPaused { get; set; }
+        public bool IsTutor { get; set; }
 
         public int WeaponIndex { get; }
 
         public void SetHealth(float health);
+        public void SetArmor(float armor);
 
         public Rifle Rifle { get; set; }
         public Pistol Pistol { get; set; }
@@ -21,6 +24,7 @@ namespace EA.Core.Managers
         public void RemoveWeapon(int index);
 
         public bool IsPaused();
+        public bool isTutored();
 
         public void SetLevelSettings(int killedBotsForWin, int coinRewardForWin, IMenu menuLogicManager, AudioClip winSound, AudioClip lossSound);
 

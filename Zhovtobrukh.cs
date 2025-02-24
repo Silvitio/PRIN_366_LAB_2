@@ -4,7 +4,7 @@ public class BonusController : MonoBehaviour
 {
     private Camera mainCamera;
     private Vector3 offset;
-    private bool isSelected = false; // Флаг, обозначающий, выбран ли бонус
+    private bool isSelected = true; // Флаг, обозначающий, выбран ли бонус
     private GameObject targetPipe;
     private bool isPositionLocked = true;
 

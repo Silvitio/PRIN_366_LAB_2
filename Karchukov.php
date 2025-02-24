@@ -21,7 +21,7 @@
 
                 <!-- Логотип -->
                 <a class="navbar-brand me-3" href="#">
-                    <img src="static/css/hse_logo.png" alt="Логотип" width="50" height="50">
+                    <img src="static/css/img/high_quality_logo.png" alt="Логотип" width="50" height="50">
                 </a>
 
                 <!-- Блок ссылок (иерархия университета) -->
@@ -124,7 +124,6 @@
                         <li><a href="#">Особенности программы</a></li>
                         <li><a href="#">О специализациях</a></li>
                         <li><a href="#">Факультативы ФКН</a></li>
-                        <li><a href="#">Партнёры</a></li>
                         <li><a href="#">Достижения студентов</a></li>
                         <li><a href="#">Выпускники</a></li>
                         <li><a href="#">ИИ 360: Инженерия искусственного интеллекта</a></li>
@@ -150,7 +149,7 @@
 
 
 
-    
+    <?php require_once("footer.php") ?>
     <script src="static/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

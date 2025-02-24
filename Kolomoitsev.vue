@@ -48,7 +48,7 @@ export default {
   <div :class="{ 'flex-row-reverse': isReversed }" class="flex items-center justify-center gap-2">
     <!-- Узел -->
     <BlockNode :main-color="getColor" :size="nodeSize" :border-size="nodeBorderSize"/>
-    <!-- Текст -->
+    <!-- Текст узла -->
     <span class="text-lg font-semibold">{{ this.text }}</span>
   </div>
 </template>

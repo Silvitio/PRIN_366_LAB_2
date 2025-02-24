@@ -150,7 +150,7 @@
 
 
 
-    
+    <?php require_once("footer.php") ?>
     <script src="static/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

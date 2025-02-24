@@ -83,7 +83,7 @@ public class Queen {
         if(!isAttack && neighbor != null)
         { isAttack = neighbor.canAttack(col, row); }
         
-        return isAttack;
+        return isDefense;
     }
     
     

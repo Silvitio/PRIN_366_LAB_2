@@ -46,8 +46,12 @@ if __name__ == "__main__":
     # Create a sample file (for demonstration purposes)
     with open(file_path, 'w') as file:
         file.write("Hello, world! This is a test file.\n")
-        file.write("Notepad++ is a great text editor.\n")
-    
+      
+
+  file.write("Notepad++ is a great text editor.\n")
+
+    <<Sixth Commit i did here for my Branch !!!>>
+
     # Perform search and replace
     search_text = "Notepad++"
     replace_text = "VS Code"

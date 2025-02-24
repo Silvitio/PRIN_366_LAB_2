@@ -54,7 +54,7 @@ int main()
     //Определить, находится ли точка внутри окружности, описывающей прямоугольник (не включая ее границу)
 
     //точка m в круге
-    int m_in_circle (pow(fabs((Right_border - fabs(Right_border - Left_border) / 2) - x_m), 2) + pow(fabs((Top_border - fabs(Top_border - Bottom_border) / 2) - y_m), 2) < (pow(fabs(Right_border - Left_border) / 2, 2) + pow(fabs(Top_border - Bottom_border) / 2, 2)));
+    int m_in_oval (pow(fabs((Right_border - fabs(Right_border - Left_border) / 2) - x_m), 2) + pow(fabs((Top_border - fabs(Top_border - Bottom_border) / 2) - y_m), 2) < (pow(fabs(Right_border - Left_border) / 2, 2) + pow(fabs(Top_border - Bottom_border) / 2, 2)));
 
     //напечатать лежит ли точка между прямоугольником и кругом
 

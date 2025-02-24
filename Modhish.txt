@@ -20,7 +20,11 @@ def search_and_replace(file_path, search_text, replace_text):
 
         # Perform the search and replace
         updated_content = file_content.replace(search_text, replace_text)
-        
+        	
+			
+			<<Fourth Commit i did here for my branch !!!>>
+
+		
         # Write the updated content back to the file
         with open(file_path, 'w') as file:
             file.write(updated_content)
@@ -36,7 +40,9 @@ def search_and_replace(file_path, search_text, replace_text):
 if __name__ == "__main__":
     # File path
     file_path = "example.txt"
-    
+	
+	<<Fifth Commit i did here for my main !!!>>    
+
     # Create a sample file (for demonstration purposes)
     with open(file_path, 'w') as file:
         file.write("Hello, world! This is a test file.\n")

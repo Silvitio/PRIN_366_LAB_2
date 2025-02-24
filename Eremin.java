@@ -26,6 +26,8 @@ public class Directorate implements EmployeeListener {
 
         return report.toString();
     }
+	
+	// Добавлен комментарий
 
     @Override
     public void employeeTransferred(EmployeeEvent e) {

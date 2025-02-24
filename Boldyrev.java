@@ -13,7 +13,7 @@ import java.awt.*;
  * RadiationMeasuringAndCellColoringRobot - ������ ������, ������� ������ ����, ��� �������� ���� �� ��������, ��� � AbstractRobot,
  * ����� ����������� ������ �������� ���� � �������� ������� �������� � ���.
  */
-public class RadiationMeasuringAndCellColoringRobot extends AbstractRobot implements RadiationMeasuring, CellColoring
+public class RadiationMeasuringAndCellColoringRobot extends AbstractRobot implements RadiationMeasuring, CellColoring, Measuring
 {
     // ------------------- ���������� ������ -----------------
 

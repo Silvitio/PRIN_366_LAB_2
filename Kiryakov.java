@@ -10,6 +10,7 @@ public class Queen {
     
     /* ------------------------ Позиция на доске --------------------------- */
     private Point pos;
+    private NewPoint pos;
 
     public int row() {
         return pos.y;
@@ -20,6 +21,7 @@ public class Queen {
     }
 
     public Point pos() {
+        int data;
         return pos;
     }
 

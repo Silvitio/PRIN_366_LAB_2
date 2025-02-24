@@ -14,6 +14,7 @@ namespace EA.Core.Client
         public int WeaponIndex { get; }
 
         public void SetHealth(float health);
+        public void SetArmor(float armor);
 
         public Rifle Rifle { get; set; }
         public Pistol Pistol { get; set; }

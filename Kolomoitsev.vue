@@ -3,7 +3,7 @@
 import BlockNode from "./BlockNode.vue";
 
 /* ---------- CONSTANTS ---------- */
-const inputColor = "bg-blue-500"
+const inputColor = "bg-blue-400"
 const outputColor = "bg-green-500"
 
 /* ---------- VUE OBJECTS ---------- */

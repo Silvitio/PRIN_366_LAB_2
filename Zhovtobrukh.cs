@@ -99,7 +99,7 @@ public class BonusController : MonoBehaviour
 
     private Sprite GetCleanSprite(string pipeName)
     {
-        if (pipeName.Contains("DirtyPipe") || pipeName.Contains("LeakStraight")) return cleanPipeSprite;
+        if (pipeName.Contains("DirtyPipes") || pipeName.Contains("LeakStraight")) return cleanPipeSprite;
         if (pipeName.Contains("DirtyCornerPipe") || pipeName.Contains("LeakCornerPipe")) return cleanCornerPipeSprite;
         if (pipeName.Contains("DirtyDiagonalPipeLeft") || pipeName.Contains("LeakDiagonalPipeLeft")) return cleanDiagonalLeftPipeSprite;
         if (pipeName.Contains("DirtyDiagonalPipeRight") || pipeName.Contains("LeakDiagonalPipeRight")) return cleanDiagonalRightPipeSprite;

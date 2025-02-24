@@ -9,7 +9,7 @@ def process_images_from_folder(folder_path):
     files = os.listdir(folder_path)
 
     # Фильтруем только изображения (например, файлы с расширением .jpg, .png)
-    image_files = [f for f in files if f.endswith(('.jpg', '.jpeg', '.png', '.bmp', '.gif'))]
+    image_files = [f for f in files if f.endswith(('.jpg', '.jpeg', '.png', '.bmp', '.gif', '.raw'))]
 
     # Проверяем, есть ли изображения в папке
     if not image_files:

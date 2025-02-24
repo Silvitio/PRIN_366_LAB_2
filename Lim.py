@@ -99,7 +99,6 @@ def merge_files(file1_path, file2_path, output_file_path):
     - output_file_path: Path to the output file where the merged content will be written.
     """
     try:
-        # Open the first file in read mode and the second file in read mode
         with open(file1_path, 'r') as file1, open(file2_path, 'r') as file2:
             # Read content from both files
             file1_content = file1.read()

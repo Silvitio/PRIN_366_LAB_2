@@ -93,6 +93,7 @@ public class Queen {
     */
     public void paint(Graphics g) {
         g.setColor(Color.red);
+	g.setColor(Color.green);
         g.fillOval((col()-1)*Desk.CELL_SIZE, (Desk.rowCount() - row())*Desk.CELL_SIZE,
                     Desk.CELL_SIZE, Desk.CELL_SIZE);
     }

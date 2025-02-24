@@ -34,3 +34,4 @@ def process_images_from_folder(folder_path):
 # Укажите путь к вашей папке с изображениями
 folder_path = 'D:/2kurs/1234'
 process_images_from_folder(folder_path)
+print("Готово!")

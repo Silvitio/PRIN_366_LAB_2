@@ -6,7 +6,7 @@ public class BonusController : MonoBehaviour
     private Vector3 offset;
     private bool isSelected = false; // Флаг, обозначающий, выбран ли бонус
     private GameObject targetPipe;
-    private bool isPositionLocked = false;
+    private bool isPositionLocked = true;
 
     private Vector3 initialPosition;
 

@@ -44,7 +44,7 @@ public class RadiationMeasuringAndCellColoringRobot extends AbstractRobot implem
     @Override
     public void colorCell(CellPosition position, Color color)
     {
-        if(amount�f�harge() >= cellColoringPrice)
+        if(amount�f�harge() > cellColoringPrice)
         {
             brush.colorCell(position, color);  // ����������� ������ �������� ������� �� ���� � ����������� ����
             // ���������� �����

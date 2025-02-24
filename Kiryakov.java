@@ -13,7 +13,7 @@ public class Queen {
     private NewPoint pos;
 
     public int row() {
-        return pos.y;
+        return pos.x;
     }
 
     public int col() {

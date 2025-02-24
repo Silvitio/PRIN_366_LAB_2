@@ -21,7 +21,7 @@ def process_images_from_folder(folder_path):
         image_path = os.path.join(folder_path, image_file)
 
         # Выполняем предсказание
-        prediction = model.predict(image_path, confidence=40, overlap=30)
+        prediction = model.predict(image_path, confidence=50, overlap=30)
 
         # Выводим JSON результат
         print(prediction.json())

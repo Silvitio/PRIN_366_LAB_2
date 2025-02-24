@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+// Комментарий перед классом
+
 public class Directorate implements EmployeeListener {
     private final List<String> _history = new ArrayList<>();
 

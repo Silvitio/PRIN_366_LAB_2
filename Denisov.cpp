@@ -9,7 +9,7 @@
 int main()
 {
     int x_m, y_m, x_a, y_a, x_b, y_b, x_c, y_c, x_d, y_d; //координаты точек 
-    int Left_border, Right_border, Top_border, Bottom_border; //координаты левой, правой, верхней и нижней границ прямоугольника
+    int Left_border, Right_border, Top_border, Bottom_border, Central_border; //координаты левой, правой, верхней и нижней границ прямоугольника
 
     //ввести координаты точек
 

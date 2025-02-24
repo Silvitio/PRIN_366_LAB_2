@@ -1,17 +1,23 @@
 def search_and_replace(file_path, search_text, replace_text):
     """
     Searches for `search_text` in the file and replaces it with `replace_text`.
-    
+		
+			<<First Commit i did here !!!>>
+	    
     Args:
         file_path (str): Path to the file.
         search_text (str): Text to search for.
         replace_text (str): Text to replace with.
     """
+				<<Third Commit i did here !!!>>
+			
     try:
         # Read the file
         with open(file_path, 'r') as file:
             file_content = file.read()
         
+			<<Second Commit i did here for my branch !!!>>
+
         # Perform the search and replace
         updated_content = file_content.replace(search_text, replace_text)
         

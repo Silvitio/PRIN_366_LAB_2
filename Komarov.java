@@ -34,6 +34,7 @@ public class Robot
 
     // ------------------- ����� "��������" �� ��������� � ����� �� ������ -----------------
     private Battery _battery;
+    private int _charge;
 
     public void useBattery(Battery outBattery) {
         if (_field == null) {

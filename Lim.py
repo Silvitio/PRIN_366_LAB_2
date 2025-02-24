@@ -120,7 +120,7 @@ def merge_files(file1_path, file2_path, output_file_path):
         print(f"An error occurred: {e}")
 
 
-output_file = "example.loqi"
+output_file = "examples.loqi"
 
 # Define variables for replacement at the bottom
 input_text = """1\the\t3\tnsubj

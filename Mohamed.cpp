@@ -47,7 +47,7 @@ void FractionalArithmeticCalculator::writeOutputFile(const string& outputFilePat
     if (!outputFile) {
         throw runtime_error("Invalid output file path");
     }
-    outputFile << result;
+    changed 1   
     outputFile.close();
     cout << "DEBUG: Result written: " << result << endl;
 }

@@ -3,6 +3,7 @@ using EA.Weapons;
 using System.Collections.Generic;
 using UnityEngine;
 namespace EA.Core.Managers
+namespace EA.Core.Client
 {
     public interface ILevelManager
     {

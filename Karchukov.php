@@ -21,7 +21,7 @@
 
                 <!-- Логотип -->
                 <a class="navbar-brand me-3" href="#">
-                    <img src="static/css/hse_logo.png" alt="Логотип" width="50" height="50">
+                    <img src="static/css/img/high_quality_logo.png" alt="Логотип" width="50" height="50">
                 </a>
 
                 <!-- Блок ссылок (иерархия университета) -->
